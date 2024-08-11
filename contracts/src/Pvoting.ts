@@ -48,7 +48,7 @@ import { isNull } from 'underscore';
         to: UInt64.from(0),
       });
 
-     this.offchainState.getAndRequireEquals();
+     //this.offchainState.getAndRequireEquals();
 
     }
   
@@ -100,7 +100,6 @@ import { isNull } from 'underscore';
   });
   Mina.setActiveInstance(Devnet);
   config();
-console.log('PRIVATE_KEY', process.env.PRIVATE_KEY);
   let senderKey = PrivateKey.fromBase58(process.env.PRIVATE_KEY || '') //PrivateKey.random();
   let sender = senderKey.toPublicKey();
   let transactionFee = UInt64.from(100_000_000);
