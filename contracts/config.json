@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "deployAliases": {
+    "devnet": {
+      "networkId": "testnet",
+      "url": "https://api.minascan.io/node/devnet/v1/graphql",
+      "keyPath": "keys/devnet.json",
+      "feepayerKeyPath": "/home/armsve/.cache/zkapp-cli/keys/minatest.json",
+      "feepayerAlias": "minatest",
+      "fee": "0.1"
+    }
+  }
+}
