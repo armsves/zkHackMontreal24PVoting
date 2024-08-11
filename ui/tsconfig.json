@@ -21,8 +21,12 @@
     "incremental": true,
     "resolveJsonModule": true,
     "jsx": "preserve",
+    "allowImportingTsExtensions": true,
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"],
+      "@/components": ["src/components/*"],
+      "@/styles": ["src/styles/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
